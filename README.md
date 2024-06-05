@@ -29,4 +29,5 @@ Example - <i>Наше приложение запускается в том же
 Example: <br>
         <h6>  private String name;<br>
               private int age;<br>
-              private <strong> transient </strong> String mail; //добавили модификатор. </h6> <br>
+              private  transient  String mail; <br> </h6> 
+<strong> Добавили модификатор, теперь account.getMail() возвращает null, потому что поле не было сохранено в файл. </strong> 
