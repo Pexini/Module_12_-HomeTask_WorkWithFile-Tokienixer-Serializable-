@@ -26,6 +26,7 @@ Example - <i>Наше приложение запускается в том же
 
 <h5> 5. Для чего нужен модификатор transient? </h5>
 <strong> Модификатором transient- </strong> дает возможность скрыть некоторые поля из сериализации. Для этого они (поля) должны быть объявлены с модификатором transient.  <br>
-Example - private String name;
-          private int age;
-          private <strong> transient </strong> String mail; //добавили модификатор.
+Example: <br>
+          private String name;<br>
+          private int age;<br>
+          private <strong> transient </strong> String mail; //добавили модификатор.<br>
