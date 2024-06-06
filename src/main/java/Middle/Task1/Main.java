@@ -14,7 +14,7 @@ public class Main {
     private static final Logger logger = Logger.getLogger(Main.class.getName()); // попробовал использовать логгер в коде
 
     public static void main(String[] args) throws Exception {
-        File read = new File("FileForProgram/File_Middle_Task1");
+        File read = new File("FileForProgram/Middle_Files/File_Middle_Task1");
 
         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(read)));) {
             Map<String, Integer> wordMap = new HashMap<>();
@@ -25,7 +25,9 @@ public class Main {
                 String[] arrayString = cleanedLine.split("\\s+");
 
                 for (String str : arrayString) {
-                    wordMap.put(str, wordMap.getOrDefault(str, 0) + 1);
+                    if (!str.isEmpty()) {                                     // добавил проверку на пустую строку, так как без нее выпадает две пустые строки
+                        wordMap.put(str, wordMap.getOrDefault(str, 0) + 1);
+                    }
                 }
             });
 
