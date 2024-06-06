@@ -8,7 +8,8 @@ public class Main_v1_case {
         File in = new File("FileForProgram/Middle_Files/Task_2_Numbes_NUM");
         File out = new File("FileForProgram/Middle_Files/Task_2_Numbes_WORDS_case");
 
-        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(in))); PrintWriter printWriter = new PrintWriter(new OutputStreamWriter(new FileOutputStream(out)));) {
+        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(in)));
+             PrintWriter printWriter = new PrintWriter(new OutputStreamWriter(new FileOutputStream(out)));) {
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 String[] numbers = line.split("\\s+");
