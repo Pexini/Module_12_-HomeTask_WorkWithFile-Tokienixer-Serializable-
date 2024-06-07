@@ -14,7 +14,7 @@ public class Main {
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(in)));
                 PrintWriter printWriter = new PrintWriter(new OutputStreamWriter(new FileOutputStream(out)))
         ) {
-//            List<String> lines = new ArrayList<>();                                Переворачиваем и строчки местами и слова
+//            List<String> lines = new ArrayList<>();                                Переворачиваем строчки местами и слова
 //            String line;
 //            while ((line = bufferedReader.readLine()) != null) {
 //                StringBuilder reversedText = new StringBuilder(line);
@@ -47,7 +47,7 @@ public class Main {
         }
 
     }
-
+    // Метод для переворачивания слова
     public static String reverseWord(String word) {
         return new StringBuilder(word).reverse().toString();
     }
