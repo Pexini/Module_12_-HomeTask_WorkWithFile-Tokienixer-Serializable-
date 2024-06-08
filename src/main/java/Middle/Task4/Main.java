@@ -3,9 +3,11 @@ package Middle.Task4;
 import java.io.*;
 
 public class Main {
+    private static final String IN = "FileForProgram/Middle_Files/Task_4_in";
+    private static final String OUT = "FileForProgram/Middle_Files/Task_4_ out_WithMatches";
     public static void main(String[] args) throws Exception {
-        File in = new File("FileForProgram/Middle_Files/Task_4_in");
-        File out = new File("FileForProgram/Middle_Files/Task_4_ out_WithMatches");
+        File in = new File(IN);
+        File out = new File(OUT);
 //        File out = new File("FileForProgram/Middle_Files/Task_4_ out_WithReplaceAll");
 
         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(in)));

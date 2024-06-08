@@ -5,10 +5,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
+    private static final String IN = "FileForProgram/Middle_Files/Task_3_in";
+    private static final String OUT = "FileForProgram/Middle_Files/Task_3_out";
     public static void main(String[] args) throws Exception {
 
-        File in = new File("FileForProgram/Middle_Files/Task_3_in");
-        File out = new File("FileForProgram/Middle_Files/Task_3_out");
+        File in = new File(IN);
+        File out = new File(OUT);
 
         try (
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(in)));

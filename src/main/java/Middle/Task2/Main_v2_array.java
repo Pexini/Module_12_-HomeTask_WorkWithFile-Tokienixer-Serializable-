@@ -3,9 +3,12 @@ package Middle.Task2;
 import java.io.*;
 
 public class Main_v2_array {
+    private static final String FILE_IN = "FileForProgram/Middle_Files/Task_2_Numbes_NUM";
+    private static final String FILE_OUT = "FileForProgram/Middle_Files/Task_2_Numbes_WORDS_array.txt";
+
     public static void main(String[] args) throws Exception {
-        File in = new File("FileForProgram/Middle_Files/Task_2_Numbes_NUM");
-        File out = new File("FileForProgram/Middle_Files/Task_2_Numbes_WORDS_array.txt");
+        File in = new File(FILE_IN);
+        File out = new File(FILE_OUT);
 
         String[] words = {"ноль", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять", "десять", "одиннадцать", "двенадцать", "тринадцать", "четырнадцать",
                 "пятнадцать", "шестнадцать", "семнадцать", "восемнадцать", "девятнадцать", "двадцать", "двадцать один", "двадцать два", "двадцать три", "двадцать четыре", "двадцать пять",

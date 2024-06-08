@@ -3,13 +3,14 @@ package Hard;
 import java.io.*;
 
 public class Hero {
+    private static final String FILE_OUT = "FileForProgram/Middle_Files/Task_4_Hero/Diary";
     private String name;
     private PrintWriter writer;
 
     public Hero(String name) {
         this.name = name;
         try {
-            writer = new PrintWriter(new FileWriter("FileForProgram/Middle_Files/Task_4_Hero/Diary", true), true);
+            writer = new PrintWriter(new FileWriter(FILE_OUT, true), true);
         } catch (IOException e) {
             System.out.println("An error occurred while opening the file.");
 
