@@ -12,9 +12,10 @@ import java.util.stream.Collectors;
 
 public class Main {
     private static final Logger logger = Logger.getLogger(Main.class.getName()); // попробовал использовать логгер в коде
+    private static final String FILE_PATH = "FileForProgram/Middle_Files/File_Middle_Task1";
 
     public static void main(String[] args) throws Exception {
-        File read = new File("FileForProgram/Middle_Files/File_Middle_Task1");
+        File read = new File(FILE_PATH);
 
         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(read)));) {
             Map<String, Integer> wordMap = new HashMap<>();
