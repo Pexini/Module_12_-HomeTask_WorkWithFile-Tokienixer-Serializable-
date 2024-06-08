@@ -17,7 +17,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         File read = new File(FILE_PATH);
 
-        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(read)));) {
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(read));) {
             Map<String, Integer> wordMap = new HashMap<>();
 
 
