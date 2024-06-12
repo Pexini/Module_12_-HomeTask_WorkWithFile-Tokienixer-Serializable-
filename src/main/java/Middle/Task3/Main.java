@@ -16,16 +16,7 @@ public class Main {
                 BufferedReader bufferedReader = new BufferedReader( new FileReader( in));
                 PrintWriter printWriter = new PrintWriter(new  FileWriter(out))
         ) {
-//            List<String> lines = new ArrayList<>();                                Переворачиваем строчки местами и слова
-//            String line;
-//            while ((line = bufferedReader.readLine()) != null) {
-//                StringBuilder reversedText = new StringBuilder(line);
-//                reversedText.reverse();
-//                lines.add(reversedText.toString());
-//            }
-//            for (int i = lines.size() - 1; i >= 0; i--) {
-//                printWriter.println(lines.get(i));
-//            }
+
             String line;
             // Считываем строки из исходного файла
             while ((line = bufferedReader.readLine()) != null) {
