@@ -3,18 +3,13 @@ package Hard;
 import java.io.*;
 
 public class Hero {
-    private static final String FILE_OUT = "FileForProgram/Middle_Files/Task_4_Hero/Diary";
+
     private String name;
     private PrintWriter writer;
 
-    public Hero(String name) {
+    public Hero(String name, PrintWriter writer) {
         this.name = name;
-        try {
-            writer = new PrintWriter(new FileWriter(FILE_OUT, true), true);
-        } catch (IOException e) {
-            System.out.println("An error occurred while opening the file.");
-
-        }
+        this.writer = writer;
     }
 
     private void fileAction(String action) {
@@ -35,11 +30,4 @@ public class Hero {
         String action = name + ": I talked with " + smbd;
         fileAction(action);
     }
-
-    public void close() {
-        if (writer != null) {
-            writer.close();
-        }
-    }
-
 }
