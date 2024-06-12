@@ -10,8 +10,8 @@ public class Main {
         File out = new File(OUT);
 //        File out = new File("FileForProgram/Middle_Files/Task_4_ out_WithReplaceAll");
 
-        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(in)));
-             PrintWriter printWriter = new PrintWriter(new OutputStreamWriter(new FileOutputStream(out)))
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(in));
+             PrintWriter printWriter = new PrintWriter(new FileWriter(out))
         ) {
             String line;
             while ((line = bufferedReader.readLine()) != null) {

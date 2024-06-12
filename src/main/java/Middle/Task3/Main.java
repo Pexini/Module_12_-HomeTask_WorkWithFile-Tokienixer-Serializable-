@@ -13,8 +13,8 @@ public class Main {
         File out = new File(OUT);
 
         try (
-                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(in)));
-                PrintWriter printWriter = new PrintWriter(new OutputStreamWriter(new FileOutputStream(out)))
+                BufferedReader bufferedReader = new BufferedReader( new FileReader( in));
+                PrintWriter printWriter = new PrintWriter(new  FileWriter(out))
         ) {
 //            List<String> lines = new ArrayList<>();                                Переворачиваем строчки местами и слова
 //            String line;
