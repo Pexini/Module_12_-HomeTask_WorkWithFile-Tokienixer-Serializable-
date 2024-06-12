@@ -10,8 +10,10 @@ public class Main_v1_case {
         File in = new File(FILE_IN);
         File out = new File(FILE_OUT);
 
-        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(in)));
-             PrintWriter printWriter = new PrintWriter(new OutputStreamWriter(new FileOutputStream(out)));) {
+        try (
+                BufferedReader bufferedReader = new BufferedReader(new FileReader(in));
+             PrintWriter printWriter = new PrintWriter(new FileWriter(out))
+             ) {
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 String[] numbers = line.split("\\s+");
@@ -60,12 +62,8 @@ public class Main_v1_case {
                 }
                 printWriter.println();
             }
-            bufferedReader.close();
-            printWriter.close();
-            System.out.println("Цифры были заменены на слова");
-        } catch (IOException e) {
-            System.out.println("Поврежденный файл");
 
+            System.out.println("Цифры были заменены на слова");
 
         }
 

@@ -22,8 +22,9 @@ public class Main_v2_array {
                 "девяносто три", "девяносто четыре", "девяносто пять", "девяносто шесть", "девяносто семь", "девяносто восемь", "девяносто девять", "сто"};
 
         try (
-                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(in)));
-                PrintWriter printWriter = new PrintWriter(new OutputStreamWriter(new FileOutputStream(out)));) {
+                BufferedReader bufferedReader = new BufferedReader(new FileReader(in));
+                PrintWriter printWriter = new PrintWriter(new FileWriter(out))
+        ){
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 String [] numbers = line.split("\\s+");
