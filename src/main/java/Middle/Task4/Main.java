@@ -1,6 +1,7 @@
 package Middle.Task4;
 
 import java.io.*;
+import java.nio.file.Files;
 
 public class Main {
     private static final String IN = "FileForProgram/Middle_Files/Task_4_in";
